@@ -1,0 +1,140 @@
+Each of the subjects took multiple measurements for each activity. Each of the variables in this data show the mean of those measurements for each person for each activity.
+
+key words:
+subject   - measurements taken of the motion of the subject
+gravity   - measurements from the gravitational force (as opposed to the acceleration due 
+            to movement of the subject) 
+acc       - measurements from the accelerometer within the phone
+gyro      - measurements from the gyroscope within the phone
+jerk      - measurement of jerk motion, taken from the body linear acceleration and the 
+            angular velocity
+            
+If prefixed with:
+time domain  - the signals are time domain, units: secs
+frequency domain - a Fast Fourier transform is applied to the signal to convert the measurement  in a frequency domain signal, units: Hz
+angle  - signals are averaged in a signal window sample (of 2.56 secs)
+
+If ending in:
+mean - the mean of the signals from each subject for that measurement of the variable
+std - the standard deviation of the measurements of each subject for that measurement of the variable
+
+###### Variable name and meanings ##########
+
+1 activity                - the activity the subject completed while wearing the phone, 
+                            (walking, walking upstairs, walking downstairs, sitting, 
+                            standing, laying)                      
+2 subjectid               - identifier of the subject who carried out the experiment                     
+3 timeaccmeanx            - mean time of the acceleration of the subject (s)       
+4 timeaccmeany            - same as 3 but in the y direction             
+5 timeaccmeanz            - same as 3 but in the z direction               
+6 timegravityaccmeanx     - mean time of the gravitational acceleration (s)
+7 timegravityaccmeany     - same as 6 but in the y direction  
+8 timegravityaccmeanz     - same as 6 but in the z direction      
+9 timeaccjerkmeanx        - mean time of the jerk signal (s)  
+10 timeaccjerkmeany       - same as 9 but in the y direction    
+11 timeaccjerkmeanz       - same as 9 but in the z direction      
+12 timegyromeanx          - mean time of the gyro signal (s)           
+13 timegyromeany          - same as 12 but in the y direction     
+14 timegyromeanz          - same as 12 but in the z direction 
+15 timegyrojerkmeanx      - mean time of the gyro jerk signal (s)           
+16 timegyrojerkmeany      - same as 15 but in the y direction     
+17 timegyrojerkmeanz      - same as 15 but in the z direction      
+18 timeaccmagmean         - mean magnitude of the time of the subjects acceleration (s)
+19 timegravityaccmagmean  - mean magnitude of the time of the gravitational force  
+                            acceleration (s)  
+20 timeaccjerkmagmean     - mean magnitude of the time of the subjects jerking motion (s)
+21 timegyromagmean        - mean magnitude of the gyroscopes motion with a time 
+                            domain signal      
+22 timegyrojerkmagmean    - mean magnitude of the time of the gyroscopes jerking motion                            
+                            (s) 
+23 freqaccmeanx           - mean frequency of acceleration of the subject (Hz)
+24 freqaccmeany           - same as 23 but in the y direction  
+25 freqaccmeanz           - same as 23 but in the z direction 
+26 freqaccmeanfreqx       - mean frequency of the acceleration the subject (Hz)
+27 freqaccmeanfreqy       - same as 26 but in the y direction
+28 freqaccmeanfreqz       - same as 26 but in the z direction
+29 freqaccjerkmeanx       - mean frequency of the acceleration jerking of the subject (s)
+30 freqaccjerkmeany       - same as 29 but in the y direction
+31 freqaccjerkmeanz       - same as 29 but in the z direction       
+32 freqaccjerkmeanfreqx   - mean frequency of the acceleration jerking of the subject with  
+                            a frequency domain signal     
+33 freqaccjerkmeanfreqy   - same as 32 but in the y direction    
+34 freqaccjerkmeanfreqz   - same as 32 but in the z direction
+35 freqgyromeanx          - mean frequency of qyro motion of the subject (Hz)
+36 freqgyromeany          - same as 35 but in the y direction
+37 freqgyromeanz          - same as 35 but in the z direction
+38 freqgyromeanfreqx      - mean frequency qyro motion frequency of the subject (Hz)
+39 freqgyromeanfreqy      - same as 38 but in the y direction 
+40 freqgyromeanfreqz      - same as 38 but in the z direction
+41 freqaccmagmean         - mean frequency magnitude of the gyroscopes jerking motion (Hz)
+42 freqaccmagmeanfreq     - mean frequency magnitude of the acceleration of the subject 
+                            (Hz)
+43 freqaccjerkmagmean     - mean magnitude of the acceleration jerking motion of the 
+                            subject (Hz) 
+44 freqaccjerkmagmeanfreq  - mean frequency magnitude of the acceleration of the subject 
+                            (Hz)
+45 freqgyromagmean         - mean magnitude of the gyro motion of the subject (Hz)
+46 freqgyromagmeanfreq     - mean frequency magnitude of the gyro motion of the subject 
+                            (Hz)
+47 freqgyrojerkmagmean     - mean magnitude of the gyro jerking motion of the subject (Hz) 
+48 freqgyrojerkmagmeanfreq - mean frequency magnitude of the gyro jerking motion of the 
+                             subject (Hz)
+49 angletimeaccmeangravity     - average time measurements for the mean gravity 
+                                  acceleration signal in a signal window sample (s)   
+50 angletimeaccjerkmeangravitymean  - average time measurements for the mean gravity 
+                                 acceleration jerking signal in a signal window sample (s)  
+51 angletimegyromeangravitymean    - average time measurements for the mean gravity gyro
+                                  acceleration signal in a signal window sample (s)  
+52 angletimegyrojerkmeangravitymean - average time measurements for the mean gravity gryo
+                                 jerking acceleration signal in a signal window sample (s)  
+53 anglegravitymeanx        - average mean gravity in the x direction     
+54 anglegravitymeany        - same as 53 but in the y direction     
+55 anglegravitymeanz        - same as 53 but in the z direction      
+56 timeaccstdx              - standard deviation of the time of the acceleration of the 
+                              subject (s)  
+57 timeaccstdy              - same as 56 but in the y direction     
+58 timeaccstdz              - same as 56 but in the z direction  
+59 timegravityaccstdx       - standard deviation of the time for the gravity signal (s)  
+60 timegravityaccstdy       - same as 59 but in the y direction   
+61 timegravityaccstdz       - same as 59 but in the z direction    
+62 timeaccjerkstdx          - standard deviation of the time of the acceleration jerking 
+                              of the subject (s)  
+63 timeaccjerkstdy          - same as 62 but in the y direction    
+64 timeaccjerkstdz          - same as 62 but in the z direction 
+65 timegyrostdx             - standard deviation of the time of the gyro motion (s)    
+66 timegyrostdy             - same as 65 but in the y direction   
+67 timegyrostdz             - same as 56 but in the z direction    
+68 timegyrojerkstdx         - standard deviation of the time of the gyro jerking motion 
+                              (s)   
+69 timegyrojerkstdy         - same as 68 but in the y direction    
+70 timegyrojerkstdz         - same as 68 but in the z direction   
+71 timeaccmagstd            - standard deviation of the time magnitude of the acceleration 
+                              of the subject (s)    
+72 timegravityaccmagstd     - standard deviation of the time magnitude of the gravity 
+                              acceleration signal (s)    
+73 timeaccjerkmagstd        - standard deviation of the time magnitude of the 
+                              acceleration jerking motion of the subject (s)   
+74 timegyromagstd           - standard deviation of the time magnitude of the gyro 
+                              motion of the subject (s)   
+75 timegyrojerkmagstd       - standard deviation of the time magnitude of the gyro 
+                              jerking motion of the subject (s)  
+76 freqaccstdx              - standard deviation of the frequency of acceleration of the 
+                              subject (Hz) 
+77 freqaccstdy              - same as 75 but in the z direction 
+78 freqaccstdz              - same as 75 but in the y direction 
+79 freqaccjerkstdx          - standard deviation of the frequency of acceleration jerking 
+                              of the subject (Hz) 
+80 freqaccjerkstdy          - same as 79 but in the y direction 
+81 freqaccjerkstdz          - same as 79 but in the z direction 
+82 freqgyrostdx             - standard deviation of the frequency of gyro motion of the   
+                              subject (Hz) 
+83 freqgyrostdy             - same as 82 but in the y direction          
+84 freqgyrostdz             - same as 82 but in the z direction 
+85 freqaccmagstd            - standard deviation of the frequency magnitude of the 
+                              acceleration of the subject (Hz) 
+86 freqaccjerkmagstd        - standard deviation of the frequency magnitude of the 
+                              acceleration jerking motion of the subject (Hz) 
+87 freqgyromagstd           - standard deviation of the frequency magnitude of the gyro 
+                              motion of the subject (Hz) 
+88 freqgyrojerkmagstd       - standard deviation of the frequency magnitude of the gyro 
+                              jerking motion of the subject (Hz)
